@@ -6,7 +6,7 @@ def create_database():
         mydb= mysql.connector.connect(host='localhost',user='oasis',passwd='secret')
 
         mycursor= mydb.cursor()
-        mycursor.execute("create database if not exist alx_book_store")
+        mycursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
         print("Database 'alx_book_store' created successfully!")
     except Error as e:
         print("Error:", e)
